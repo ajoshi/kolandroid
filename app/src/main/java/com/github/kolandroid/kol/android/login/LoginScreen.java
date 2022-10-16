@@ -2,10 +2,11 @@ package com.github.kolandroid.kol.android.login;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import androidx.appcompat.app.ActionBar;
 
 import com.github.kolandroid.kol.android.R;
 import com.github.kolandroid.kol.android.chat.ChatBroadcaster;

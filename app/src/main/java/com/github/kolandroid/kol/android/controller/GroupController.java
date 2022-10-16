@@ -1,9 +1,10 @@
 package com.github.kolandroid.kol.android.controller;
 
 import android.os.Bundle;
-import android.support.annotation.CallSuper;
 import android.view.View;
 import android.widget.TabHost.TabSpec;
+
+import androidx.annotation.CallSuper;
 
 import com.github.kolandroid.kol.android.R;
 import com.github.kolandroid.kol.android.screen.FragmentScreen;

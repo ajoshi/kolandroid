@@ -1,7 +1,8 @@
 package com.github.kolandroid.kol.android.controller;
 
-import android.support.annotation.CallSuper;
 import android.view.View;
+
+import androidx.annotation.CallSuper;
 
 import com.github.kolandroid.kol.android.screen.Screen;
 import com.github.kolandroid.kol.android.util.HandlerCallback;

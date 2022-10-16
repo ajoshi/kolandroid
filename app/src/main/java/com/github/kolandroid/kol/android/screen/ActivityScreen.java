@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.kolandroid.kol.android.controller.Controller;
 import com.github.kolandroid.kol.android.controllers.MessageController;
@@ -16,7 +16,7 @@ import com.github.kolandroid.kol.util.Logger;
 
 import java.util.UUID;
 
-public abstract class ActivityScreen extends ActionBarActivity implements Screen {
+public abstract class ActivityScreen extends AppCompatActivity implements Screen {
     private AndroidViewContext base;
 
     private Controller currentController = null;
@@ -90,6 +90,7 @@ public abstract class ActivityScreen extends ActionBarActivity implements Screen
             // Do not shift the displayed controller
             Logger.log("ActivityScreen", this.getClass() + " received intent without controller id");
         }
+        super.onNewIntent(intent);
     }
 
     protected AndroidViewContext createViewContext() {

@@ -4,14 +4,15 @@ import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.annotation.DrawableRes;
-import android.support.v4.app.ActionBarDrawerToggle;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarActivity;
 import android.view.MenuItem;
 import android.view.View;
+
+import androidx.annotation.DrawableRes;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.github.kolandroid.kol.android.R;
 import com.github.kolandroid.kol.android.controller.Controller;
@@ -50,7 +51,7 @@ public class DrawerScreen extends FragmentScreen {
      * @param drawerLayout The DrawerLayout containing this fragment's UI.
      * @param topIcon   The icon to use in the top left to summon the navigation bar
      */
-    public void setUp(final ActionBarActivity host, int fragmentId, DrawerLayout drawerLayout, @DrawableRes int topIcon) {
+    public void setUp(final AppCompatActivity host, int fragmentId, DrawerLayout drawerLayout, @DrawableRes int topIcon) {
         mFragmentContainerView = host.findViewById(fragmentId);
         mDrawerLayout = drawerLayout;
 
@@ -64,12 +65,14 @@ public class DrawerScreen extends FragmentScreen {
             actionBar.setHomeButtonEnabled(true);
         }
 
+        actionBar.setIcon(topIcon);
+
         // ActionBarDrawerToggle ties together the the proper interactions
         // between the navigation drawer and the action bar app icon.
         mDrawerToggle = new ActionBarDrawerToggle(
                 host,                    /* host Activity */
                 mDrawerLayout,                    /* DrawerLayout object */
-                topIcon,             /* nav drawer image to replace 'Up' caret */
+//                topIcon,             /* nav drawer image to replace 'Up' caret */
                 R.string.navigation_drawer_open,  /* "open drawer" description for accessibility */
                 R.string.navigation_drawer_close  /* "close drawer" description for accessibility */
         ) {
@@ -93,6 +96,8 @@ public class DrawerScreen extends FragmentScreen {
                 sp.edit().putBoolean(PREF_USER_LEARNED_DRAWER, true).apply();
             }
         };
+
+//        mDrawerToggle.setDrawerArrowDrawable(host.getDrawable(topIcon));
 
         // If the user hasn't 'learned' about the drawer, open it to introduce them to the drawer,
         // per the navigation drawer design guidelines.

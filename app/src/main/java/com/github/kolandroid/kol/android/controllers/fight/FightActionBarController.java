@@ -1,7 +1,8 @@
 package com.github.kolandroid.kol.android.controllers.fight;
 
-import android.support.v4.view.ViewPager;
 import android.view.View;
+
+import androidx.viewpager.widget.ViewPager;
 
 import com.github.kolandroid.kol.android.controller.LinkedModelController;
 import com.github.kolandroid.kol.android.screen.Screen;

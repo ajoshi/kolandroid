@@ -1,9 +1,10 @@
 package com.github.kolandroid.kol.android.controllers.fight;
 
-import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+
+import androidx.viewpager.widget.ViewPager;
 
 import com.github.kolandroid.kol.android.R;
 import com.github.kolandroid.kol.android.binders.DefaultGroupBinder;

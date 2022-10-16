@@ -1,8 +1,9 @@
 package com.github.kolandroid.kol.android.controllers.chat;
 
 import android.content.BroadcastReceiver;
-import android.support.annotation.CallSuper;
 import android.view.View;
+
+import androidx.annotation.CallSuper;
 
 import com.github.kolandroid.kol.android.chat.ChatBroadcaster;
 import com.github.kolandroid.kol.android.controller.LinkedModelController;

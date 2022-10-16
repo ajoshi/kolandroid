@@ -3,8 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fff"
-    android:orientation="vertical"
-    tools:context="com.github.kolandroid.kol.android.util.searchlist.SearchListFragment">
+    android:orientation="vertical">
 
     <EditText
         android:id="@+id/search_list_input"

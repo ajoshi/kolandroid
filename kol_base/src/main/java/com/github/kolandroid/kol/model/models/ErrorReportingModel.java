@@ -11,7 +11,7 @@ public class ErrorReportingModel extends Model {
     /**
      * Create a new model in the provided session.
      *
-     * @param s Session to use in all future requests by this model.
+     * @param settings settings to use in all future requests by this model.
      */
     public ErrorReportingModel(SettingsContext settings) {
         super(new Session());
@@ -28,7 +28,7 @@ public class ErrorReportingModel extends Model {
     }
 
     public String generateReportAddress() {
-        return "kingdomofloathingandroid@gmail.com";
+        return "kolAppThing@ajoshi.biz";
     }
 
     public String generateReport(String userDescription) {

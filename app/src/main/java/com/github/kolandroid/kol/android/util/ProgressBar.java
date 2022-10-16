@@ -7,13 +7,12 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
-import android.support.annotation.NonNull;
 import android.util.AttributeSet;
-import android.widget.TextView;
+import androidx.annotation.NonNull;
 
 import com.github.kolandroid.kol.android.R;
 
-public class ProgressBar extends TextView {
+public class ProgressBar extends androidx.appcompat.widget.AppCompatTextView {
     private float progress = 0f;
 
     private Paint backPaint;

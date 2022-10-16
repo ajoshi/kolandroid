@@ -1,9 +1,10 @@
 package com.github.kolandroid.kol.android.controllers.fight;
 
 import android.graphics.PorterDuff;
-import android.support.annotation.DrawableRes;
 import android.view.View;
 import android.widget.ImageView;
+
+import androidx.annotation.DrawableRes;
 
 import com.github.kolandroid.kol.android.R;
 import com.github.kolandroid.kol.android.controller.Controller;

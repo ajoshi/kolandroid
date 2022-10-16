@@ -13,12 +13,12 @@ The app requires android 4.0.3. Since this app is not yet available for the Goog
 
 ## Problems installing the app?
 * If you get a Parse Error when installing the .apk, first check that your android version is 4.0.3 or above.
-* Next, verify that the .apk file you downloaded is around 6-7MB in size. If it is smaller, the downloader you used to download the .apk may have downloaded a corrupted file. Try using a different downloader, or downloading the .apk on your computer and transfering it to your phone.
-* If these don't solve your problem, I would love to hear about it! You can kmail me in KoL as Kasekopf or email me at kingdomofloathingandroid@gmail.com. Please include your android version and the type of phone you are using.
+* Next, verify that the .apk file you downloaded is around 3-4MB in size. If it is smaller, the downloader you used to download the .apk may have downloaded a corrupted file. Try using a different downloader, or downloading the .apk on your computer and transfering it to your phone.
+* If these don't solve your problem, I would love to hear about it! You can kmail me in KoL as ajoshi or email me at kolAppThing@ajoshi.biz. Please include your android version and the type of phone you are using.
 
 ## Problems using the app?
 * If the app crashes, the next startup should automatically trigger error reporting. You will be able to send a description and error log directly to me.
-* If the app has non-fatal issues, these are not automatically reported. Feel free to kmail me as Kasekopf or email me at kingdomofloathingandroid@gmail.com.
+* If the app has non-fatal issues, these are not automatically reported. Feel free to kmail me as ajoshi or email me at kolAppThing@ajoshi.biz.
 
 ## Have an opinion about the app? Want to see new features?
 Kmail Kasekopf, we can talk :)
